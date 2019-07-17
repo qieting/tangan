@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#545149"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:id="@+id/addxue"
+                android:clickable="true"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/xue1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="血糖"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/xue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/xue1"
+                    android:text="10.5"
+
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/xue2"
+                    android:text="mmol/L"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/xue1"
+                    android:background="@drawable/ts" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:id="@+id/addyun"
+                android:clickable="true"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/yun1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运动"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/yun2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yun1"
+                    android:text="133"
+
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yun2"
+                    android:text="千卡"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/yun1"
+                    android:background="@drawable/run" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:id="@+id/addyin"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/yin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮食"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="仅统计基本营养物质"
+                android:textSize="8sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorwhite"
+                android:layout_toRightOf="@id/yin1"/>
+            <TextView
+                android:id="@+id/yin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yin1"
+                android:text="1200"
+
+                android:textColor="@color/colorwhite"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yin2"
+                android:text="  g"
+                android:textColor="@color/colorwhite"
+                android:textSize="17sp" />
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/yin1"
+                android:background="@drawable/yin" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+      >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/timg" />
+
+        <TextView
+            android:id="@+id/book1"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="糖尿病可以吃的水果" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ttt" />
+
+        <TextView
+            android:id="@+id/book2"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="糖尿病患者的日常" />
+    </LinearLayout>
+
+</LinearLayout>

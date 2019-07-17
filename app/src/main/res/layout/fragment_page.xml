@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="130dp"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recy"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:text="添加食物" />
+    <LinearLayout
+        android:id="@+id/le1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text"
+                android:gravity="center"
+                android:textColor="@color/colorblack"
+                android:textSize="23sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="总质量：0g" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submmit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorblue"
+            android:text="提交" />
+    </LinearLayout>
+</RelativeLayout>
+
+

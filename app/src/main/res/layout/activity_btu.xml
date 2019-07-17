@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hsy.tangan.BTu">
+
+    <com.example.hsy.tangan.ui.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:back="true"
+        android:id="@+id/qqqqq"
+        app:plus="false"
+        app:title="饼状图"></com.example.hsy.tangan.ui.TitleLayout>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/mPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

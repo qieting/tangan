@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorblue"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:text="请选择运动时间"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:text="30分钟"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_margin="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/isss"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_drawable"
+        android:text="确认" />
+
+
+</LinearLayout>

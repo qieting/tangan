@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:id="@+id/re"
+    android:layout_height="match_parent" >
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:text="00:00"
+        android:id="@+id/time"
+        android:textSize="23sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorblue"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

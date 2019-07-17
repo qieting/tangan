@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/posto"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:clickable="true"
+    android:background="@color/colorwhite"
+    android:layout_height="wrap_content" >
+    <ImageButton
+        android:layout_width="20dp"
+        android:scaleType="fitXY"
+        android:layout_margin="10dp"
+        android:id="@+id/delete_post"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/delete"
+        android:layout_height="20dp" />
+    <com.example.hsy.tangan.BindImage
+        android:layout_width="30dp"
+        android:background="@drawable/head1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="30dp"
+        android:id="@+id/head"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="12dp"
+        android:textColor="@color/colorblack"
+        android:layout_toRightOf="@id/head"
+        android:text="最多容纳6个字"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="9dp"
+        android:textColor="@color/colorblack"
+        android:layout_toRightOf="@id/head"
+        android:layout_below="@id/name"
+        android:id="@+id/time"
+        android:layout_height="wrap_content"
+        android:text="8月29号"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/titl"
+        android:textColor="@color/colorblack"
+        android:layout_below="@id/head"
+        android:text="我是文章标题"
+        android:textSize="23dp"/>
+
+
+    <com.example.hsy.tangan.BindImage
+        android:layout_below="@id/titl"
+        android:id="@+id/image3"
+        android:layout_margin="10dp"
+        android:layout_width="250dp"
+        android:scaleType="center"
+        android:layout_height="160dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/image_linear"
+        android:layout_margin="10dp"
+        android:layout_below="@id/image3"
+        android:layout_height="120dp">
+
+        <com.example.hsy.tangan.BindImage
+            android:id="@+id/image1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center" />
+
+        <com.example.hsy.tangan.BindImage
+            android:id="@+id/image2"
+            android:layout_marginLeft="30dp"
+            android:layout_width="120dp"
+            android:scaleType="center"
+            android:layout_height="120dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+        android:id="@+id/comment_line"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/image_linear">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/comment_rela"
+            android:layout_height="20dp">
+           <ImageView
+               android:layout_width="20dp"
+               android:id="@+id/coin1"
+               android:scaleType="fitXY"
+               android:layout_height="20dp"
+               android:background="@drawable/comment"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/coin1"
+                android:layout_height="wrap_content"
+                android:text="评论"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/comment_line"
+        android:layout_height="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/textColorHint"
+            android:layout_height="6dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

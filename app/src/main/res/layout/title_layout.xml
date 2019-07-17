@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back_title"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:text="题目"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/plus_title"
+            android:layout_width="30dp"
+            android:scaleType="fitXY"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/plus"/>
+        <Button
+            android:text="确认"
+            android:background="@null"
+            android:id="@+id/is_title"
+            android:layout_width="30dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorwhite"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>

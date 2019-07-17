@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+
+    <com.example.hsy.tangan.ui.TitleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/baogaotitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:back="true"
+        app:plus="false"
+        app:title="健康报告"></com.example.hsy.tangan.ui.TitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/qaz"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="饮食数据分析"
+                    android:gravity="center"
+                    android:textSize="25sp"
+
+                    android:textColor="@color/colorblack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/yinshiT"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:background="@color/colorblue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="30dp"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xty"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="血糖数据分析"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorblack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xuetangT"
+                android:padding="15dp"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="30dp"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/sports"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="运动数据分析"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorblack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/yundongT"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:background="@color/toolbaryellow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp"  />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

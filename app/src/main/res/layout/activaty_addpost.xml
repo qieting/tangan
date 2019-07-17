@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.example.hsy.tangan.ui.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/toolbaryellow"
+        android:id="@+id/title_addpost"
+        android:layout_gravity="top"></com.example.hsy.tangan.ui.TitleLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+      ></LinearLayout>
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:maxHeight="40dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:id="@+id/titl_addpost"
+        android:hint="标题，不大于20字"
+        android:minEms="1"
+        android:maxEms="2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dadada"></LinearLayout>
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@null"
+        android:id="@+id/content_addpost"
+        android:hint="请输入您要发布的内容"
+        android:minEms="5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#dadada">
+        <com.example.hsy.tangan.LocationView
+            android:layout_width="120dp"
+
+
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/locationview"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo_addpost"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+

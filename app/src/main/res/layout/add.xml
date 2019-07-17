@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+
+
+    android:layout_width="320dp"
+    android:orientation="vertical">
+    <com.example.hsy.tangan.ui.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="增加今日糖安数据"
+        app:plus="false"
+        app:back="false"
+     ></com.example.hsy.tangan.ui.TitleLayout>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorblack"
+        android:layout_height="match_parent"
+        android:text="2019年2月13日"/>
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="早晨" />
+
+        <RadioButton
+        android:id="@+id/rb_woman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="中午"
+        />
+        <RadioButton
+            android:id="@+id/wanshang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="晚上"
+            />
+    </RadioGroup>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="血糖值(mmol/L) : "
+           android:layout_marginLeft="15dp"
+
+           android:layout_height="wrap_content" />
+       <EditText
+           android:id="@+id/xuetang"
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:hint="请输入血糖值"
+           android:layout_height="wrap_content"
+           android:inputType="numberDecimal"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="   偏高  "
+           android:id="@+id/xuetangE"
+           android:visibility="invisible"
+           android:textColor="@color/colorred"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:id="@+id/submmit"
+        android:background="@drawable/button_shape"
+        android:layout_gravity="center"/>
+</LinearLayout>
